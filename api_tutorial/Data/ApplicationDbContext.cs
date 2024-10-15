@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using api_tutorial.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace api_tutorial.Data
 {
@@ -15,6 +16,6 @@ namespace api_tutorial.Data
             
         }
         public DbSet<Stock> Stock {get; set;}
-        public DbSet<Comment> Comments {get; set;}
+        public DbSet<Comment> Comment {get; set;}
     }
 }
